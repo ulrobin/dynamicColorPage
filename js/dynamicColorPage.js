@@ -33,9 +33,10 @@ jQuery(document).ready(function($){
     $('<div class="color_changer"><div class="panel panel-default"></div></div>').appendTo("body");var domElementContent='<div class="panel panel-default"><div class="row">';
     $("body").on("click","*",function(){
         if(colorChangerToggleState){
-            if($(this).hasClass("color_changer-toggle"))return;
-            $(".color_changer").removeClass('faded-in');
-            colorChangerToggleState=false;
+            if(!$(this).hasClass("color_changer-toggle")){
+                $(".color_changer").removeClass('faded-in');
+                colorChangerToggleState=false;
+            }
         }
     });
     $("body").on("click",".color_changer-toggle",function(){
