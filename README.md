@@ -29,6 +29,10 @@ With this variable you can define another standard color class, the script shoul
 For exaple if this variable is "grey", then you have to add "dclgrey" or "dbggrey" as classes to your elements to active the script
 and the color-change-functionality for these elements. For default the value is "", so you can just use "dcl" and "dbg" as classes.
 
+### CSS - Styling
+The only possibility to change the direct css code of the color-changer, you have to adapt the css code, that is part of the javascript
+code and that is stored in the variable "css_string".
+
 ## How it works:
 The script just replaces the previous "dcl" or "dbg" class of all elements and replaces this with the new color name.
 If the default color is set to "" and that is changed to "green", then every "dcl" and every "dbg" class is replaced with "dclgreen" 
