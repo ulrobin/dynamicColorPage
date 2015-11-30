@@ -17,12 +17,12 @@ that are automatically generated out of the given "colors" object.
 ## Options / Customization:
 The script contains was made to be easy to use. As a result, you can only customize three options.
 
-# JS - "colors"-object
+### JS - "colors"-object
 This object defines the choosable colors. These colors are automatically applied to the page and will get listed in the color-
 changer are by default. The "default" property sets the standard style, when the page is loaded.
-# JS - "color_tiles_per_row" - int
+### JS - "color_tiles_per_row" - int
 This variable defines, how many color tiles are in one row of the color-changer element.
-# JS - "colorChangerOldColor" - String
+### JS - "colorChangerOldColor" - String
 With this variable you can define another standard color class, the script should look for, if the color is changed.
 For exaple if this variable is "grey", then you have to add "dclgrey" or "dbggrey" as classes to your elements to active the script
 and the color-change-functionality for these elements. For default the value is "", so you can just use "dcl" and "dbg" as classes.
