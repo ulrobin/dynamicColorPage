@@ -1,5 +1,5 @@
 # dynamicColorPage
-Tiny jQuery pluugin to easily adapt the page's styling
+Tiny jQuery plugin to easily adapt the page's styling
 
 ## What is it for?
 dynamicColorPage was made to give the visitors of a website the possibility to choose their favourite style colors.
