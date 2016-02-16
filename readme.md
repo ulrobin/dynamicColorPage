@@ -1,6 +1,11 @@
 # dynamicColorPage
 Tiny jQuery plugin to easily adapt the page's styling
 
+## Demo:
+Please visit 
+http://www.dynamic-color-page.hol.es 
+to view an example page. The important button is a small blue one in the right bottom corner of the website.
+
 ## What is it for?
 dynamicColorPage was made to give the visitors of a website the possibility to choose their favourite style colors.
 All you have to do, is to add the class "dcl" (for dynamic color) or "dbg" (for dynamic background-color) to all elements, 
