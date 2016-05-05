@@ -1,5 +1,6 @@
 # dynamicColorPage 2.0
 Some months ago dynamicColorPage was a tiny jQuery plugin to easily adopt the page's styling.
+
 But now it is a pure javascript "plugin" with some awesome new features!
 
 ## Demo:
