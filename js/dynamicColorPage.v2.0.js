@@ -61,11 +61,11 @@ function pageLoadComplete() {
                 if(color_tiles_counter < (color_tiles_per_row - 1))
                 {
                     color_tiles_counter = (color_tiles_counter + 1);
-                    domElementContent = domElementContent + '<div class="color_tile dbg' + key + '" data-color="' + key + '"></div>';
+                    domElementContent = domElementContent + '<div style="background-color:' + property_value + '" class="color_tile" data-color="' + key + '"></div>';
                 }
                 else
                 {
-                    domElementContent = domElementContent + '<div class="color_tile dbg' + key + '" data-color="' + key + '"></div>';
+                    domElementContent = domElementContent + '<div style="background-color:' + property_value + '" class="color_tile" data-color="' + key + '"></div>';
                     domElementContent = domElementContent + "</div><div class='color_changer_row'>";
                     color_tiles_counter = 0;
                 }
@@ -116,69 +116,52 @@ function pageLoadComplete() {
     // Save memory, so tidy up unused variables
     css_string = "";
     domElementContent = "";
-    old_dcl_elements = "";
-    old_dclHover_elements = "";
-    old_dbg_elements = "";
     this_element = "";
 }
 function changeColor(new_color) {
     // Change old dcl class to new one
-    old_dcl_elements = document.getElementsByClassName("dcl" + colorChangerOldColor);
-    for(var b = 0; b < old_dcl_elements.length; b++)
+    while(document.getElementsByClassName("dcl" + colorChangerOldColor).length != 0)
     {
-        this_element = old_dcl_elements[b];
-        if(hasClass(this_element, "color_tile")) return;
+        this_element = document.getElementsByClassName("dcl" + colorChangerOldColor)[0];
         removeClass(this_element, "dcl" + colorChangerOldColor);
         addClass(this_element, "dcl" + new_color);
     }
     // Change old dclHover class to new one
-    old_dclHover_elements = document.getElementsByClassName("dclHover" + colorChangerOldColor);
-    for(var b = 0; b < old_dclHover_elements.length; b++)
+    while(document.getElementsByClassName("dclHover" + colorChangerOldColor).length != 0)
     {
-        this_element = old_dclHover_elements[b];
-        if(hasClass(this_element, "color_tile")) return;
+        this_element = document.getElementsByClassName("dclHover" + colorChangerOldColor)[0];
         removeClass(this_element, "dclHover" + colorChangerOldColor);
         addClass(this_element, "dclHover" + new_color);
     }
     // Change old dbg class to new one
-    old_dbg_elements = document.getElementsByClassName("dbg" + colorChangerOldColor);
-    for(var b = 0; b < old_dbg_elements.length; b++)
+    while(document.getElementsByClassName("dbg" + colorChangerOldColor).length != 0)
     {
-        this_element = old_dbg_elements[b];
-        if(hasClass(this_element, "color_tile")) return;
+        this_element = document.getElementsByClassName("dbg" + colorChangerOldColor)[0];
         removeClass(this_element, "dbg" + colorChangerOldColor);
         addClass(this_element, "dbg" + new_color);
     }
-    old_dcl_elements = "";
-    old_dclHover_elements = "";
-    old_dbg_elements = "";// Change old luminanceStep-classes to new ones
+    // Change old luminanceStep-classes to new ones
     for(var j = -100; j < 101; j += 10) {
         // Change old luminanceStep-dcl class to new one
-        old_dcl_elements = document.getElementsByClassName("dcl" + colorChangerOldColor + j);
-        for(var b = 0; b < old_dcl_elements.length; b++)
+        while(document.getElementsByClassName("dcl" + colorChangerOldColor + j).length != 0)
         {
-            this_element = old_dcl_elements[b];
-            if(hasClass(this_element, "color_tile")) return;
+            this_element = document.getElementsByClassName("dcl" + colorChangerOldColor + j)[0];
             removeClass(this_element, "dcl" + colorChangerOldColor + j);
             addClass(this_element, "dcl" + new_color + j);
         }
         // Change old luminanceStep-dclHover class to new one
-        old_dclHover_elements = document.getElementsByClassName("dclHover" + colorChangerOldColor + j);
-        for(var b = 0; b < old_dclHover_elements.length; b++)
+        while(document.getElementsByClassName("dclHover" + colorChangerOldColor + j).length != 0)
         {
-            this_element = old_dclHover_elements[b];
-            if(hasClass(this_element, "color_tile")) return;
+            this_element = document.getElementsByClassName("dclHover" + colorChangerOldColor + j)[0];
             removeClass(this_element, "dclHover" + colorChangerOldColor + j);
             addClass(this_element, "dclHover" + new_color + j);
         }
         // Change old luminanceStep-dbg class to new one
-        old_dbg_elements = document.getElementsByClassName("dbg" + colorChangerOldColor + "" + j);
-        for(var b = 0; b < old_dbg_elements.length; b++)
+        while(document.getElementsByClassName("dbg" + colorChangerOldColor + j).length != 0)
         {
-            this_element = old_dbg_elements[b];
-            if(hasClass(this_element, "color_tile")) return;
-            removeClass(this_element, "dbg" + colorChangerOldColor + "" + j);
-            addClass(this_element, "dbg" + new_color + "" + j);
+            this_element = document.getElementsByClassName("dbg" + colorChangerOldColor + j)[0];
+            removeClass(this_element, "dbg" + colorChangerOldColor + j);
+            addClass(this_element, "dbg" + new_color + j);
         }
     }
     colorChangerOldColor = new_color;
