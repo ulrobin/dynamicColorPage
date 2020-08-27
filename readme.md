@@ -15,17 +15,19 @@ The extended functionality applies some additional classes, in combination with 
 (-100, -90, -80, -70, -60, -50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100) at the end of the class (e.g. "dbg-70").
 These colors are darked or lighted color versions of the basic color for the selected color.
 
-## What's new in v2.2?
+## Changelog
+
+### What's new in v2.2?
 The button got a new design. Function and variable names prefixed with dynamicColorPage_ to avoid collisions with existing functions. The release now includes a minified version again. 
 
-## What's new in v2.1?
+### What's new in v2.1?
 Now the script doesn't crash the browser when the already active color is clicked again.
 
-## What's new in v2.0?
+### What's new in v2.0?
 Now the selected color is automatically stored in a cookie on the webpage, so a reload, or navigating to another page on the same server won't reset the selected color! 
 
 ## Dependences:
-The script is written without the usage of any dependences! There is no jQuery or anything else needed for releases from dynamicColorPage@2.0.0 on.
+The script is written without the usage of any dependences! There is no jQuery or anything else needed for all releases since dynamicColorPage@2.0.0.
 
 ## Installation:
 The script only has to be included anywhere in the page. Then it automatically adds all the necessary DOM elements and stylesheets, 
