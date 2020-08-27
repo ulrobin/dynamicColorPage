@@ -3,8 +3,8 @@ dynamicColorPage was previously a tiny jQuery plugin to easily adopt the page's 
 Due to a rewrite, it is now a pure javascript "plugin" with some awesome new features!
 
 ## Demo:
-Please visit
-https://drohnen-videograf.de/dynamicColorPage
+Please visit 
+https://drohnen-videograf.de/dynamicColorPage/ 
 to view an example page. The important button is the small blue one in the right bottom corner of the website.
 
 ## What is it for?
@@ -36,17 +36,17 @@ that are automatically generated out of the given "colors" object.
 ## Options / Customization:
 The script was made to be easy to use. As a result, you can only customize four options.
 
-### JS - "colors" - Data type: object
+### JS - "dynamicColorPage_colors" - Data type: object
 This object defines the choosable colors. These colors are automatically applied to the page and will get listed in the color-
 changer are by default. The "default" property (don't remove it!) sets the standard style, when the page is loaded.
-### JS - "color_tiles_per_row" - Data type: int
+### JS - "dynamicColorPage_useCookiesFeature" - Data type: Boolean
+With this variable you can define, whether the script should store the currently selected color in a cookie and automatically re-use this stored color, when the page is reloaded or the user navigates to another page with this script included.
+### JS - "dynamicColorPage_colorTilesPerRow" - Data type: int
 This variable defines, how many color tiles should be in one row of the color-changer element.
-### JS - "colorChangerOldColor" - Data type: String
+### JS - "dynamicColorPage_activeColor" - Data type: String
 With this variable you can define another standard color class, the script should look for, if the color is changed.
 For exaple if this variable is "grey", then you have to add "dclgrey" or "dbggrey" as classes to your elements to active the script
 and the color-change-functionality for these elements. For default the value is "", so you can just use "dcl" and "dbg" as classes.
-### JS - "useCookiesFeature" - Data type: Boolean
-With this variable you can define, whether the script should store the currently selected color in a cookie and automatically re-use this stored color, when the page is reloaded or the user navigates to another page with this script included.
 
 
 ### CSS - Styling
