@@ -2,7 +2,7 @@
 /* Live demo available at https://drohnen-videograf.de/dynamicColorPage/ */
 /* dynamicColorPage@2.2.0 */
 
-const dynamicColorPage_colors = {
+var dynamicColorPage_colors = {
     standard: '#f34e36',
     red: '#f34e36',
     green: '#b5d947',
@@ -13,9 +13,9 @@ const dynamicColorPage_colors = {
     orange: '#f4a622',
     emerald: '#2ecc71'
 };
-const dynamicColorPage_useCookiesFeature = true; // Default value: true
-const dynamicColorPage_cookieExpiresAfterDays = 365; // Default value: 365
-const dynamicColorPage_colorTilesPerRow = 2; // Default value: 2
+var dynamicColorPage_useCookiesFeature = true; // Default value: true
+var dynamicColorPage_cookieExpiresAfterDays = 365; // Default value: 365
+var dynamicColorPage_colorTilesPerRow = 2; // Default value: 2
 var dynamicColorPage_activeColor = ''; // Default value: ''
 
 /* Don't change any code below! */
