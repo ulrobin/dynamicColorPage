@@ -1,4 +1,4 @@
-# dynamicColorPage 2.2
+# dynamicColorPage v2.2.0
 dynamicColorPage was previously a tiny jQuery plugin to easily adopt the page's color styling.
 Due to a rewrite, it is now a pure javascript "plugin" with some awesome new features!
 
