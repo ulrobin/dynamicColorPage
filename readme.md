@@ -18,8 +18,7 @@ These colors are darked or lighted color versions of the basic color for the sel
 ## Changelog
 
 ### What's new in v2.2?
-The button got a new design. Function and variable names prefixed with dynamicColorPage_ to avoid collisions with existing functions. The release now includes a minified version again. 
-
+Function and variable names prefixed with dynamicColorPage_ to avoid collisions with existing functions. The release now includes a minified version again. Added config variable to change when cookie will expire. 
 ### What's new in v2.1?
 Now the script doesn't crash the browser when the already active color is clicked again.
 
