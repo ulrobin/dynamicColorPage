@@ -40,6 +40,8 @@ This object defines the choosable colors. These colors are automatically applied
 changer are by default. The "default" property (don't remove it!) sets the standard style, when the page is loaded.
 ### JS - "dynamicColorPage_useCookiesFeature" - Data type: Boolean
 With this variable you can define, whether the script should store the currently selected color in a cookie and automatically re-use this stored color, when the page is reloaded or the user navigates to another page with this script included.
+### JS - "dynamicColorPage_cookieExpiresAfterDays" - Data type: int
+With this variable you can define, after how many days the cookie will expire and the user has to do the color selection again.
 ### JS - "dynamicColorPage_colorTilesPerRow" - Data type: int
 This variable defines, how many color tiles should be in one row of the color-changer element.
 ### JS - "dynamicColorPage_activeColor" - Data type: String
